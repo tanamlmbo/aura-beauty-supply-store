@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dopamine Flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="day-mode">
+
+    <header>
+        <button id="popout-btn" class="utility-btn">📺 Pop Out Timer</button>
+        <button id="theme-toggle" class="utility-btn">🌙 Night Mode</button>
+    </header>
+
+    <main class="focus-container">
+        <div id="timer-bubble" class="bubble timer-glacial">
+            <span id="time-display">15:00</span>
+        </div>
+
+        <div class="task-zone">
+            <div class="bubble single-focus-bubble">
+                <input type="text" id="focus-input" placeholder="What are we attacking for the next 15 mins?">
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="action-btn play-btn"> Go! 🌞</button>
+            <button id="complete-btn" class="action-btn complete-btn hidden">Task Complete! 🌸</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
