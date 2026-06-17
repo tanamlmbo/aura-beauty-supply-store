@@ -271,6 +271,53 @@ app.post('/cart/add', async (req, res) => {
     }
 });
 
+/* ==========================================
+   WISHLIST STATE CONTROL MANAGEMENT
+   ========================================== */
+
+// USER WISHLIST STORAGE SYSTEM - POST /wishlist/add
+app.post('/wishlist/add', async (req, res) => {
+    // Re-route unauthenticated traffic safely back to portal login
+    if (!req.session.user) {
+        return res.redirect('/login?error=Please sign in to manage your luxury wishlist selection.');
+    }
+
+    const { productId } = req.body;
+
+    try {
+        // Query your cloud collection cluster to verify item asset status
+        const targetProduct = await Product.findOne({ id: productId });
+        if (!targetProduct) {
+            return res.redirect('/products?error=Product document entry not found.');
+        }
+
+        // Initialize user wishlist memory cache if not present in session context
+        if (!req.session.wishlist) {
+            req.session.wishlist = [];
+        }
+
+        // Run validation check to prevent redundant item cloning metrics
+        const alreadyInWishlist = req.session.wishlist.some(item => item.productId === productId);
+
+        if (!alreadyInWishlist) {
+            req.session.wishlist.push({
+                productId: targetProduct.id,
+                name: targetProduct.name,
+                price: targetProduct.price,
+                image: targetProduct.image
+            });
+            console.log(`Wishlist Updated for ${req.session.user.email}: Appended ${targetProduct.name}`);
+        }
+
+        // Smooth backtick redirect back to active view frame with formal visual confirmation string
+        res.redirect(`/products?category=${targetProduct.category}&success=${encodeURIComponent(targetProduct.name + ' successfully added to your private wishlist!')}`);
+        
+    } catch (error) {
+        console.error('Wishlist Processing Bottleneck Encountered:', error);
+        res.status(500).send('Wishlist processing fault entry registered.');
+    }
+});
+
 // 2. COMMIT ORDER TO CLOUD MONGODB - POST /orders (Checkout)
 app.post('/orders', async (req, res) => {
     if (!req.session.user) {
