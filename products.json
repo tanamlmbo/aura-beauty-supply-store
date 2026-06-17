@@ -1,0 +1,370 @@
+[
+  {
+    "id": "prod_001",
+    "category": "lips",
+    "name": "FENTY BEAUTY GLOSS BOMB",
+    "price": 380,
+    "description": "Explosive fuchsia shine meets intense nourishment. Infused with shea butter for a high-glitz, juicy plumping effect.",
+    "image": "/images/lip_1.jpg"
+  },
+  {
+    "id": "prod_002",
+    "category": "lips",
+    "name": "KYLIE COSMETICS LIP GLAZE",
+    "price": 340,
+    "description": "A smooth, ultra-creamy mauve glaze that delivers a supple kiss of color with a comfortable, high-octane lacquered shine.",
+    "image": "/images/lip_2.jpg"
+  },
+  {
+    "id": "prod_003",
+    "category": "lips",
+    "name": "THE KYLIE HIGH-SHINE VAULT",
+    "price": 1450,
+    "description": "The ultimate luxury curation. A premium six-piece collection featuring custom high-gloss lacquer finishes and shimmering pigments.",
+    "image": "/images/lip_3.jpg"
+  },
+  {
+    "id": "prod_004",
+    "category": "lips",
+    "name": "KYLIE SKIN VANILLA CARAMEL BUTTER",
+    "price": 290,
+    "description": "An ultra-nourishing, rich moisture mask designed with an advanced conditioning tip for long-lasting derma hydration.",
+    "image": "/images/lip_4.jpg"
+  },
+  {
+    "id": "prod_005",
+    "category": "lips",
+    "name": "KYLIE GLOSSY LIP KIT DUO",
+    "price": 480,
+    "description": "A precision contour lip liner paired with a matching high-shine liquid lacquer glaze for a completely seamless lip routine.",
+    "image": "/images/lip_5.jpg"
+  },
+  {
+    "id": "prod_006",
+    "category": "lips",
+    "name": "RHODE CINNAMON PEPTIDE TINT",
+    "price": 320,
+    "description": "A warm, spiced neutral tint that naturally plumps and restores skin resilience via specialized peptide complexes.",
+    "image": "/images/lip_6.jpg"
+  },
+  {
+    "id": "prod_007",
+    "category": "lips",
+    "name": "RHODE RASPBERRY JELLY TINT",
+    "price": 320,
+    "description": "A deep berry peptide wash that locks in lasting moisture barrier protection while adding a rich, sheer glaze pop.",
+    "image": "/images/lip_7.jpg"
+  },
+  {
+    "id": "prod_008",
+    "category": "lips",
+    "name": "RHODE RIBBON PEPTIDE LIP TREATMENT",
+    "price": 320,
+    "description": "A delicate, silky pink glaze formulated to deeply hydrate and visibly restore pillowy softness to the lip barrier.",
+    "image": "/images/lip_8.jpg"
+  },
+  {
+    "id": "prod_009",
+    "category": "lips",
+    "name": "HOMEBODY ALL-OVER JUICY OIL",
+    "price": 490,
+    "description": "An architectural, multi-use hydration gloss serum designed to leave a shimmering, radiant glass finish across the skin matrix.",
+    "image": "/images/lip_9.jpg"
+  },
+  {
+    "id": "prod_010",
+    "category": "lips",
+    "name": "HOMEBODY LIQUID LOVE LIP BALM",
+    "price": 260,
+    "description": "A fluid, crystalline clear recovery balm suspended in a botanical hydration wash for weightless, high-gloss protection.",
+    "image": "/images/lip_10.jpg"
+  },
+  {
+    "id": "prod_011",
+    "category": "hair-care",
+    "name": "CÉCRED HYDRATING SHAMPOO",
+    "price": 540,
+    "description": "An elevated salon-grade, moisture-rich cleansing formula that revitalizes weightless volume and crown-level texture.",
+    "image": "/images/hair_1.jpg"
+  },
+  {
+    "id": "prod_012",
+    "category": "hair-care",
+    "name": "CÉCRED 2-STEP RECOVERY ROUTINE",
+    "price": 890,
+    "description": "An intense monthly clinical matrix containing fermented rice protein powder and a silk rinse treatment for ultimate hair fiber repair.",
+    "image": "/images/hair_2.jpg"
+  },
+  {
+    "id": "prod_013",
+    "category": "hair-care",
+    "name": "CÉCRED RECONSTRUCTING MASK",
+    "price": 720,
+    "description": "A rich, deep-conditioning structural treatment mask designed to repair damage, reduce breakage, and restore hair elasticity.",
+    "image": "/images/hair_3.jpg"
+  },
+  {
+    "id": "prod_014",
+    "category": "hair-care",
+    "name": "CÉCRED NOURISHING HAIR OIL",
+    "price": 650,
+    "description": "A lightweight, custom lipid blend formula that seals in maximum hydration, controls frizz, and delivers an immaculate glossy shine.",
+    "image": "/images/hair_4.jpg"
+  },
+  {
+    "id": "prod_015",
+    "category": "nails",
+    "name": "MAKARTT PROFESSIONAL ESSENTIALS KIT",
+    "price": 280,
+    "description": "Salon-grade adhesion and styling system. Features built-in brush nail glue, professional remover serum, and precision wood tool applicators.",
+    "image": "/images/nail_1.jpg"
+  },
+  {
+    "id": "prod_016",
+    "category": "nails",
+    "name": "THE COQUETTE LEOPARD LUXE SET",
+    "price": 350,
+    "description": "A premium handcrafted press-on set balancing striking wild-print accents with high-shine pink bows and crystal-rimmed star details.",
+    "image": "/images/nails_5.jpg"
+  },
+  {
+    "id": "prod_017",
+    "category": "nails",
+    "name": "THE NOSTALGIC DOT & BOW SUITE",
+    "price": 350,
+    "description": "Clean minimalist editorial design. Features stark black-and-white polka dot frames, graphic pink stripes, and elegant 3D sculptural bow ties.",
+    "image": "/images/nnails_3.jpg"
+  },
+  {
+    "id": "prod_018",
+    "category": "nails",
+    "name": "THE OCEANIC MATRICARIA MANICURE",
+    "price": 390,
+    "description": "Intricate, three-dimensional coastal couture press-on set featuring hand-sculpted gel flora, starfish charms, and fluid droplet textures.",
+    "image": "/images/nails_4.jpg"
+  },
+  {
+    "id": "prod_019",
+    "category": "nails",
+    "name": "THE SWEETHEART PATISSERIE CAPSULE",
+    "price": 350,
+    "description": "An ultra-detailed, playful set showcasing rich cocoa polka dots, strawberry decals, and glossy pink heart-shaped icing motifs.",
+    "image": "/images/nails_5.jpg"
+  },
+  {
+    "id": "prod_020",
+    "category": "nails",
+    "name": "THE FLEUR DE LYS GLACE LUXURY SET",
+    "price": 420,
+    "description": "Immaculate bridal-grade editorial extensions featuring a premium soft pink ombre base topped with hand-sculpted 3D lily blossoms.",
+    "image": "/images/nails_6.jpg"
+  },
+  {
+    "id": "prod_021",
+    "category": "nails",
+    "name": "THE RETRO POLKA SUFFIX SET",
+    "price": 320,
+    "description": "A refined, high-gloss layout pairing deep black enamel accents with pastel pink bases in a stark, modern geometric configuration.",
+    "image": "/images/nails_7.jpg"
+  },
+  {
+    "id": "prod_022",
+    "category": "nails",
+    "name": "THE ANGELIC RIBBON WHIMSY SET",
+    "price": 380,
+    "description": "Ethereal pearlescent white base design decorated with hand-painted pink bows, chrome micro-beads, and crystalline gel hearts.",
+    "image": "/images/nails_8.jpg"
+  },
+  {
+    "id": "prod_023",
+    "category": "skincare",
+    "name": "PASTRY SKINCARE AMBER BODY WASH",
+    "price": 420,
+    "description": "A gentle, clarifying body cleanser infused with premium peach botanicals and targeted exfoliating alpha-hydroxy systems.",
+    "image": "/images/skin_1.jpg"
+  },
+  {
+    "id": "prod_024",
+    "category": "skincare",
+    "name": "PASTRY SKINCARE CERAMIDE LOTION",
+    "price": 460,
+    "description": "A rich, velvety body lotion fortified with niacinamide and grapefruit extracts to lock in optimal cellular balance.",
+    "image": "/images/skin_2.jpg"
+  },
+  {
+    "id": "prod_025",
+    "category": "skincare",
+    "name": "KYLIE SKIN MAKEUP REMOVING WIPES",
+    "price": 180,
+    "description": "Ultra-soft, travel-ready premium cloths formulated to thoroughly dissolve stubborn cosmetic layers without stripping hydration.",
+    "image": "/images/skin_3.jpg"
+  },
+  {
+    "id": "prod_026",
+    "category": "skincare",
+    "name": "KYLIE SKIN MELTING CLEANSER",
+    "price": 390,
+    "description": "An oil-to-milk transformation melting cream that deeply breaks down dirt and makeup layers, leaving a completely weightless glow.",
+    "image": "/images/skin_4.jpg"
+  },
+  {
+    "id": "prod_027",
+    "category": "skincare",
+    "name": "KYLIE SKIN CLARIFYING CLEANSING GEL",
+    "price": 390,
+    "description": "A foaming salicylic acid gel formula engineered to deeply purify skin pores, control surface sebum, and prevent balance bottlenecking.",
+    "image": "/images/skin_5.jpg"
+  },
+  {
+    "id": "prod_028",
+    "category": "skincare",
+    "name": "KYLIE SKIN FOAMING FACE WASH",
+    "price": 420,
+    "description": "An iconic, airy foam wash infused with premium walnut powder derivatives to gently condition and re-texturize the dermis layer.",
+    "image": "/images/skin_6.jpg"
+  },
+  {
+    "id": "prod_029",
+    "category": "skincare",
+    "name": "KYLIE SKIN REVITALIZING EYE CREAM",
+    "price": 360,
+    "description": "An advanced green tea and caffeine matrix formula designed to brighten, firm, and visibly de-puff delicate under-eye profiles.",
+    "image": "/images/skin_7.jpg"
+  },
+  {
+    "id": "prod_030",
+    "category": "oral-care",
+    "name": "AURA STAINLESS STEEL TONGUE SCRAPER",
+    "price": 140,
+    "description": "A high-precision, surgical-grade stainless steel dental loop tool built to maximize oral clarity and deliver a pristine daily routine.",
+    "image": "/images/oral_1.jpg"
+  },
+  {
+    "id": "prod_031",
+    "category": "oral-care",
+    "name": "DEARCUS REFILLABLE TONGUE CLEANER",
+    "price": 240,
+    "description": "An ergonomic, premium Korean dental cleaner featuring replaceable medical-grade silicone ridges for comfortable oral conditioning.",
+    "image": "/images/oral_2.jpg"
+  },
+  {
+    "id": "prod_032",
+    "category": "oral-care",
+    "name": "EUTHYMOL MILD MINT MOUTHWASH",
+    "price": 190,
+    "description": "An antiseptic, non-alcoholic mild mint oral wash presenting the iconic, refreshing heritage blend for exceptional dental hygiene.",
+    "image": "/images/oral_3.jpg"
+  },
+  {
+    "id": "prod_033",
+    "category": "oral-care",
+    "name": "EUTHYMOL EXTRAORDINARY PINK WHITENING",
+    "price": 165,
+    "description": "A powerful wintergreen mint formulation delivering pristine tooth whitening in one week without preservatives or peroxides.",
+    "image": "/images/oral_4.jpg"
+  },
+  {
+    "id": "prod_034",
+    "category": "oral-care",
+    "name": "EUTHYMOL WHITENING PURPLE CORRECTOR",
+    "price": 175,
+    "description": "A scientific dental preparation utilizing advanced purple tone-correction technology to cancel yellow undertones instantly.",
+    "image": "/images/oral_5.jpg"
+  },
+  {
+    "id": "prod_035",
+    "category": "oral-care",
+    "name": "EUTHYMOL ORIGINAL WHITENING TOOTHPASTE",
+    "price": 160,
+    "description": "The timeless, upper-class heritage formulation that promotes a bright, shining smile through signature botanical oils.",
+    "image": "/images/oral_6.jpg"
+  },
+  {
+    "id": "prod_036",
+    "category": "oral-care",
+    "name": "ORAL-B iO SERIES SUPER SENSITIVE EDITION",
+    "price": 3450,
+    "description": "High-luxury micro-vibrational electric toothbrush. Features dedicated smart pressure guidance, a travel case, and custom pink details.",
+    "image": "/images/oral_7.jpg"
+  },
+  {
+    "id": "prod_037",
+    "category": "oral-care",
+    "name": "EMIE HELLO KITTY SONIC TOOTHBRUSH",
+    "price": 680,
+    "description": "An aesthetic pastel pink sonic toothbrush showcasing custom 3D character design, multiple frequency modes, and structural protective caps.",
+    "image": "/images/oral_8.jpg"
+  },
+  {
+    "id": "prod_038",
+    "category": "oral-care",
+    "name": "MARVIS SENSITIVE GUMS GENTLE MINT",
+    "price": 220,
+    "description": "An exquisite, pink metallic designer tube housing a specialized low-abrasion formula tailored specifically for premium gum margin care.",
+    "image": "/images/oral_9.jpg"
+  },
+  {
+    "id": "prod_039",
+    "category": "scents",
+    "name": "MAISON FRANCIS KURKDJIAN BACCARAT ROUGE 540",
+    "price": 6200,
+    "description": "Bespoke high-luxury extrait de parfum blending radiant amber, woody cedar notes, and saffron signatures inside an iconic crimson bottle.",
+    "image": "/images/scents_1.jpg"
+  },
+  {
+    "id": "prod_040",
+    "category": "scents",
+    "name": "COSMIC BY KYLIE JENNER EAU DE PARFUM",
+    "price": 1150,
+    "description": "A magnetic floral amber scent revealing fresh opening accords of star jasmine and blood orange on a soft cedarwood base.",
+    "image": "/images/scents_2.jpg"
+  },
+  {
+    "id": "prod_041",
+    "category": "scents",
+    "name": "CAROLINA HERRERA VERY GOOD GIRL GLAM",
+    "price": 2450,
+    "description": "A bold floral-woody fragrance defined by sparkling cherry top notes and upcycled rose water, housed in an iconic pink glitter stiletto.",
+    "image": "/images/scents_3.jpg"
+  },
+  {
+    "id": "prod_042",
+    "category": "scents",
+    "name": "CHANEL COCO MADEMOISELLE INTENSE",
+    "price": 3100,
+    "description": "A powerful, deep ambery formulation highlighting extreme patchouli fractions wrapped in warm, comforting vanilla and tonka bean absolutes.",
+    "image": "/images/scents_4.jpg"
+  },
+  {
+    "id": "prod_043",
+    "category": "scents",
+    "name": "KAYALI VANILLA CANDY ROCK SUGAR 42",
+    "price": 2650,
+    "description": "A delightfully sweet, gourmand explosion mixing candied pear, bubblegum, and rock sugar notes over a rich vanilla absolute core.",
+    "image": "/images/scents_5.jpg"
+  },
+  {
+    "id": "prod_044",
+    "category": "scents",
+    "name": "YSL BLACK OPIUM EAU DE PARFUM",
+    "price": 2550,
+    "description": "The ultimate dark, seductive signature. Adorned with glitter textures and built on addictive black coffee accords and sensual vanilla.",
+    "image": "/images/scents_6.jpg"
+  },
+  {
+    "id": "prod_045",
+    "category": "scents",
+    "name": "MUGLER ALIEN RECHARGEABLE TALISMAN",
+    "price": 2700,
+    "description": "An otherworldly ambery woody floral scent. Blends rich sambac jasmine with solar cashmere wood notes inside an architectural amethyst bottle.",
+    "image": "/images/scents_7.jpg"
+  },
+  {
+    "id": "prod_046",
+    "category": "scents",
+    "name": "PACO RABANNE LADY MILLION",
+    "price": 2150,
+    "description": "A fresh, multifaceted diamond-cut bottle containing a vibrant, glamorous mix of bitter orange, jasmine absolute, and amber-patchouli.",
+    "image": "/images/scents_8.jpg"
+  }
+]

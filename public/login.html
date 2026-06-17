@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Beauty // Client Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="/my_favicon.png">
+</head>
+<body class="auth-page-body">
+
+    <header class="category-header">
+        <a href="/" class="back-home-link">&larr; Return to Aura Storefront</a>
+        <h1 class="collection-title">CLIENT PORTAL</h1>
+        <div style="width: 100px;"></div> 
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Welcome Back to Aura</h2>
+            <p class="auth-subtitle">Sign in to manage your maintenance rotation and wishlist.</p>
+
+            <div id="error-alert-box" class="brand-alert-banner" style="display: none;"></div>
+
+            <form action="/login" method="POST" class="secure-auth-form">
+                <div class="input-group">
+                    <label for="client-email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="client-email" 
+                        name="email" 
+                        placeholder="name@domain.com" 
+                        required>
+                </div>
+
+                <div class="input-group">
+                    <label for="client-password">Password</label>
+                    <input 
+                        type="password" 
+                        id="client-password" 
+                        name="password" 
+                        placeholder="••••••••••••" 
+                        required>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">ACCESS MY ROTATION</button>
+            </form>
+
+            <div id="forgot-password-zone" style="display: none; margin-top: 15px;">
+                <a href="/forgot-password" class="pink-inline-link" style="font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px;">🔒 Forgot your password? Reset access credentials</a>
+            </div>
+
+            <div class="auth-footer-redirect">
+                <p>New to Aura Beauty? <a href="/register" class="pink-inline-link">Create a concierge profile</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aura Beauty Supply. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        const attempts = parseInt(urlParams.get('attempts')) || 0;
+
+        if (error) {
+            const alertBox = document.getElementById('error-alert-box');
+            alertBox.textContent = error;
+            alertBox.style.display = 'block';
+        }
+
+        if (attempts >= 3) {
+            document.getElementById('forgot-password-zone').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

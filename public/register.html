@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Beauty // Concierge Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="/my_favicon.png">
+</head>
+<body class="auth-page-body">
+
+    <header class="category-header">
+        <a href="/" class="back-home-link">&larr; Return to Aura Storefront</a>
+        <h1 class="collection-title">CREATING PROFILE</h1>
+        <div style="width: 100px;"></div>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-card">
+            <h2>Join Aura Beauty</h2>
+            <p class="auth-subtitle">Register your details below to activate your custom database session track.</p>
+
+            <div id="error-alert-box" class="brand-alert-banner" style="display: none;"></div>
+
+            <form action="/register" method="POST" class="secure-auth-form">
+                <div class="input-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" name="email" placeholder="Concierge Email" autocomplete="off" required>
+                </div>
+
+                <div class="input-group" style="position: relative; margin-bottom: 25px;">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create Secure Password" autocomplete="new-password" required>
+                    
+                    <div id="password-alert-popup" style="display: none; position: absolute; left: 0; top: calc(100% + 5px); width: 100%; background: #FFF0F5; color: #FF69B4; font-family: sans-serif; font-size: 11px; padding: 10px; border-radius: 6px; border: 1px solid #FFB6C1; box-shadow: 0 4px 12px rgba(255,182,193,0.3); z-index: 10; box-sizing: border-box;">
+                        ✨ Password must be 8+ characters, with 1 uppercase letter & 1 special symbol.
+                    </div>
+                </div>
+
+                <button type="submit" class="auth-submit-btn">REGISTER SECURE ACCT</button>
+            </form>
+
+            <div class="auth-footer-redirect">
+                <p>Already an active client? <a href="/login" class="pink-inline-link">Sign in here</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const error = urlParams.get('error');
+        if (error) {
+            const alertBox = document.getElementById('error-alert-box');
+            alertBox.textContent = error;
+            alertBox.style.display = 'block';
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const passwordInput = document.getElementById("password");
+            const alertPopup = document.getElementById("password-alert-popup");
+
+            // 🌟 RULE 1: Show popup on focus or hover
+            passwordInput.addEventListener("focus", () => {
+                if (passwordInput.value.length === 0) {
+                    alertPopup.style.display = "block";
+                }
+            });
+            passwordInput.addEventListener("mouseenter", () => {
+                if (passwordInput.value.length === 0) {
+                    alertPopup.style.display = "block";
+                }
+            });
+
+            // 🌟 RULE 2: Instantly hide when typing begins
+            passwordInput.addEventListener("input", () => {
+                if (passwordInput.value.length > 0) {
+                    alertPopup.style.display = "none";
+                } else {
+                    alertPopup.style.display = "block";
+                }
+            });
+
+            // Clean up when leaving field
+            passwordInput.addEventListener("mouseleave", () => {
+                if (document.activeElement !== passwordInput) {
+                    alertPopup.style.display = "none";
+                }
+            });
+            passwordInput.addEventListener("blur", () => {
+                alertPopup.style.display = "none";
+            });
+        });
+    </script>
+
+</body>
+</html>

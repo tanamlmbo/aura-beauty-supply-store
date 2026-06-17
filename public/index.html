@@ -3,32 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dopamine Flow</title>
+    <title>Aura Beauty Supply</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="96x96" href="my_favicon.png">
 </head>
-<body class="day-mode">
+<body>
 
-    <header>
-        <button id="popout-btn" class="utility-btn">📺 Pop Out Timer</button>
-        <button id="theme-toggle" class="utility-btn">🌙 Night Mode</button>
-    </header>
+    <header class="main-header">
+        <div class="header-top-row">
+            <div class="header-left">
+                <input type="checkbox" id="sidebar-toggle-check" class="hidden-trigger-check">
+                <label for="sidebar-toggle-check" class="menu-open-label">☰</label>
+                <label for="sidebar-toggle-check" class="sidebar-backdrop-mask"></label>
 
-    <main class="focus-container">
-        <div id="timer-bubble" class="bubble timer-glacial">
-            <span id="time-display">15:00</span>
-        </div>
+                <div class="sidebar-panel">
+                    <label for="sidebar-toggle-check" class="close-panel-label">&times;</label>
+                    
+                    <nav class="sidebar-nav-links">
+                        <div class="nav-section-title">Navigation Hub</div>
+                        <div class="category-item-box">
+                            <a href="/" class="cat-link" style="font-weight: bold; letter-spacing: 1px;">
+                                <span class="cat-dot">🏠</span> Home Storefront <span class="cat-arrow">&rarr;</span>
+                            </a>
+                        </div>
 
-        <div class="task-zone">
-            <div class="bubble single-focus-bubble">
-                <input type="text" id="focus-input" placeholder="What are we attacking for the next 15 mins?">
+                        <div class="nav-section-title" style="margin-top: 20px;">Shop Collections</div>
+                        <div class="category-item-box">
+                            <a href="/products?category=lips" class="cat-link">
+                                <span class="cat-dot">🌸</span> Lips <span class="cat-arrow">&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="category-item-box">
+                            <a href="/products?category=skincare" class="cat-link">
+                                <span class="cat-dot">🌸</span> Skincare <span class="cat-arrow">&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="category-item-box">
+                            <a href="/products?category=oral-care" class="cat-link">
+                                <span class="cat-dot">🌸</span> Oral Care <span class="cat-arrow">&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="category-item-box">
+                            <a href="/products?category=hair-care" class="cat-link">
+                                <span class="cat-dot">🌸</span> Hair Care <span class="cat-arrow">&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="category-item-box">
+                            <a href="/products?category=nails" class="cat-link">
+                                <span class="cat-dot">🌸</span> Nails & Tools <span class="cat-arrow">&rarr;</span>
+                            </a>
+                        </div>
+                        <div class="category-item-box">
+                            <a href="/products?category=scents" class="cat-link">
+                                <span class="cat-dot">🌸</span> Premium Scents <span class="cat-arrow">&rarr;</span>
+                            </a>
+                        </div>
+
+                        <div class="nav-section-title">Aura Hub</div>
+                        <a href="/about" class="hub-link">About Aura Brand</a>
+                        <a href="/track-order" class="hub-link">Track My Order</a>
+                        
+                        <div class="sidebar-contact-card">
+                            <div class="card-title">Customer Care Suite</div>
+                            <p class="contact-row"><span>📞 Support Hotlines:</span><br>+27 (0) 11 555 0192<br>+27 (0) 82 555 0143</p>
+                            <p class="contact-row"><span>✉️ Concierge Email:</span><br><a href="mailto:support@aurabeauty.com" class="email-anchor">support@aurabeauty.com</a></p>
+                        </div>
+
+                        <div class="nav-info-block">
+                            <p class="info-row"><strong>Trading Hours:</strong><br>Mon - Sat: 09:00 - 18:00<br>Sun: Closed</p>
+                            <p class="info-row"><strong>Boutique Address:</strong><br>Aura Supply Suite, Kempton Park, GP</p>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <h1 class="brand-title">AURA BEAUTY SUPPLY</h1>
+
+            <div class="header-right-utils">
+                <a href="/login" class="util-link" title="Account Login">👤</a>
+                <a href="/wishlist" class="util-link" title="My Wishlist">❤️</a>
+                <a href="/checkout" class="util-link" title="Shopping Cart">🛒</a>
             </div>
         </div>
 
-        <div class="controls">
-            <button id="start-btn" class="action-btn play-btn"> Go! 🌞</button>
-            <button id="complete-btn" class="action-btn complete-btn hidden">Task Complete! 🌸</button>
+        <div class="search-container">
+            <input type="text" placeholder="Search hair, skin, or brands..." class="header-search-bar">
         </div>
+    </header>
+
+    <section class="hero-slider">
+        <button class="slider-arrow prev-btn">&lt;</button>
+        <button class="slider-arrow next-btn">&gt;</button>
+
+        <div class="slides-container">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/lip_slider'); background-size: cover; background-position: center;">
+                <div class="slide-content">
+                    <h2>Shop lipcare from your favourite brands</h2>
+                    <a href="/products?category=lips" class="browse-btn">BROWSE</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/skincare_slider'); background-size: cover; background-position: center;">
+                <div class="slide-content">
+                    <h2>Shop skincare curated for your glow</h2>
+                    <a href="/products?category=skincare" class="browse-btn">BROWSE</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/oral_slider'); background-size: cover; background-position: center;">
+                <div class="slide-content">
+                    <h2>Shop cutesy, elevated oral hygiene essentials</h2>
+                    <a href="/products?category=oral-care" class="browse-btn">BROWSE</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/lip_slider'); background-size: cover; background-position: center;">
+                <div class="slide-content">
+                    <h2>Shop premium hair tools & luminous strands protection</h2>
+                    <a href="/products?category=hair-care" class="browse-btn">BROWSE</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/nails_slider.png'); background-size: cover; background-position: center;">
+                <div class="slide-content">
+                    <h2>Discover aesthetic acrylic sets and trend glosses</h2>
+                    <a href="/products?category=nails" class="browse-btn">BROWSE</a>
+                </div>
+            </div>
+            
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('/images/scent_slider'); background-size: cover; background-position: center;">
+                <div class="slide-content">
+                    <h2>Find your signature story with premium infusions</h2>
+                    <a href="/products?category=scents" class="browse-btn">BROWSE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="hero-banner">
+            <h2>The Maintenance Rotation, Elevated.</h2>
+            <p>Premium essentials curated for your hair texture and skin glow.</p>
+        </section>
+
+        <section class="featured-products">
+            <h3>Featured Arrivals</h3>
+            <div class="product-grid"></div>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 Aura Beauty Supply. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
