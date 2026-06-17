@@ -1,6 +1,20 @@
 /* ==========================================
-   🌸 GLOBAL BRAND THEMING & HEADER SUITE
+   GLOBAL BRAND THEMING & INITIALIZATION
    ========================================== */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFF0F5;
+    font-family: sans-serif;
+}
 
 /* 🌸 Header Block Layout */
 .main-header {
@@ -24,6 +38,7 @@
 .header-left, .header-right-utils {
     flex: 1; /* Automatically balances the sides so the logo stays perfectly dead-center */
     display: flex;
+    align-items: center;
 }
 
 .header-right-utils {
@@ -91,14 +106,14 @@
    🎡 DYNAMIC HERO CAROUSEL ENGINE 
    ========================================== */
 
-/* 🎡 Updated Hero Slider Layout Height Adjustments */
 .hero-slider {
     position: relative;
     width: 100%;
-    height: calc(100vh - 160px); /* Adjusted to make room for the search bar row */
+    flex-grow: 1; /* Automatically forces container to fill layout remaining space */
+    min-height: calc(100vh - 180px); /* Adjusts viewport allocation height calculation dynamically */
     overflow: hidden;
-    background-color: #000;
-} /* 💡 FIXED: Added missing closing bracket here! */
+    background-color: #000000;
+} 
 
 .slides-container {
     width: 100%;
@@ -117,31 +132,25 @@
     transition: opacity 0.6s ease-in-out;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
 }
 
-/* Dynamic PR Photo allocations pointing inside your image assets directory */
-.slide:nth-child(1) { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/lips.jpg'); }
-.slide:nth-child(2) { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/skincare.jpg'); }
-.slide:nth-child(3) { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/oral.jpg'); }
-.slide:nth-child(4) { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/hair.jpg'); }
-.slide:nth-child(5) { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/nails.jpg'); }
-.slide:nth-child(6) { background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('images/scents.jpg'); }
-
 .slide.active {
     opacity: 1;
     z-index: 2; /* Forces current slide to top of layout stack */
 }
 
-/* 📝 Minimal Center Text & Typography Styling */
+/* Center Text & Typography Styling */
 .slide-content {
     text-align: center;
     color: #ffffff;
     padding: 0 20px;
     max-width: 700px;
+    z-index: 3;
 }
 
 .slide-content h2 {
@@ -149,7 +158,7 @@
     font-weight: 300;
     letter-spacing: 2px;
     margin-bottom: 25px;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 /* 🏷️ Plain Text Browse Button with Simple Border */
@@ -217,11 +226,11 @@
     user-select: none;
 }
 
-/* 1. The Core Panel Frame Setup */
+/* Core Panel Frame Setup */
 .sidebar-panel {
     position: fixed;
     top: 0;
-    left: 0; /* 💡 Change from -320px to 0 */
+    left: 0; 
     width: 300px;
     height: 100vh;
     background-color: #ffffff;
@@ -231,14 +240,11 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    
-    /* 💡 THE SECRET SAUCE: Start completely slid off-screen using transform, 
-       and set up an ultra-smooth cubic-bezier transition curve */
     transform: translateX(-100%); 
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Kills the raw default formatting strings across the panel layout */
+/* Formats typography strings across the panel layout links */
 .sidebar-panel a, 
 .sidebar-panel a:visited, 
 .sidebar-panel a:active {
@@ -253,6 +259,15 @@
     flex-direction: column;
     width: 100%;
     text-align: left;
+}
+
+.nav-section-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #be185d;
+    margin: 15px 0 10px 10px;
 }
 
 /* Category Directory Block Wrappers */
@@ -286,7 +301,7 @@
     transition: all 0.25s ease-in-out;
 }
 
-/* ✨ THE HOVER FEEDBACK ENGINE: Activates your sleek gray luxury blocks */
+/* Hover Feedback Layout Matrix Toggle */
 .category-item-box:hover .cat-link,
 .hub-link:hover {
     background-color: #f3f4f6 !important; 
@@ -309,7 +324,7 @@
     transform: translateX(0);
 }
 
-/* 📞 Support Desk Contact Info Board */
+/* Support Desk Contact Info Board */
 .sidebar-contact-card {
     background-color: #fff5f7;
     border: 1px dashed #fbcfe8;
@@ -348,30 +363,33 @@
     font-weight: 500;
 }
 
-/* When the hidden checkbox is checked, slide the panel onto the screen! */
+.nav-info-block {
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Slide the panel onto the viewport wrapper when active checkbox is triggered */
 #sidebar-toggle-check:checked ~ .sidebar-panel {
-    /* 💡 Change from 'left: 0' to 'transform: translateX(0)' */
     transform: translateX(0) !important; 
 }
 
-/* 3. 🌫️ Full Screen Clickable Background Backdrop Mask */
+/* Full Screen Clickable Background Backdrop Mask */
 .sidebar-backdrop-mask {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.25); /* Slightly richer tint for luxury contrast */
+    background-color: rgba(0, 0, 0, 0.25); 
     backdrop-filter: blur(4px); 
     z-index: 998; 
     opacity: 0;
     pointer-events: none; 
-    
-    /* 💡 Ensure the background fade matches the sidebar speed perfectly */
     transition: opacity 0.4s ease-in-out; 
 }
 
-/* 🔥 THE NO-DOM BACKDROP ENGINE: Fade mask in when checkbox is checked! */
 #sidebar-toggle-check:checked ~ .sidebar-backdrop-mask {
     opacity: 1;
     pointer-events: auto; 
@@ -382,7 +400,7 @@
    ========================================== */
 
 .auth-page-body {
-    background-color: #fff5f7; /* Very delicate pink tint backdrop */
+    background-color: #fff5f7; 
 }
 
 .auth-container {
@@ -440,7 +458,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #be185d; /* Dark raspberry pink accent */
+    color: #be185d; 
 }
 
 .input-group input {
@@ -461,10 +479,10 @@
     box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.1);
 }
 
-/* Premium Pink Luxury Submission Button */
+/* Submission Action Interface Controls */
 .auth-submit-btn {
     width: 100%;
-    background-color: #ec4899; /* Deep pink hero accent */
+    background-color: #ec4899; 
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -502,7 +520,7 @@
    ========================================== */
 
 .category-header {
-    background-color: #fbcfe8; /* Matches homepage header background precisely */
+    background-color: #fbcfe8; 
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -512,7 +530,7 @@
     border-bottom: 1px solid rgba(236, 72, 153, 0.2);
 }
 
-/* Beautiful back-to-store toggle navigation link */
+/* Storefront routing navigation elements */
 .back-home-link, 
 .back-home-link:visited, 
 .back-home-link:active {
@@ -528,11 +546,10 @@
 }
 
 .back-home-link:hover {
-    color: #ec4899 !important; /* Highlights with brand pink on hover */
-    padding-left: 5px; /* Subtle transition push */
+    color: #ec4899 !important; 
+    padding-left: 5px; 
 }
 
-/* Balanced header title typography positioning */
 .collection-title {
     margin: 0;
     font-size: 1.6rem;
@@ -540,10 +557,10 @@
     letter-spacing: 4px;
     color: #1f2022;
     text-align: center;
-    flex: 2; /* Keeps text centered against structural side blocks */
+    flex: 2; 
 }
 
-/* 🚨 Luxury Inline Error Alert Banner */
+/* Luxury Inline Error Alert Banner */
 .brand-alert-banner {
     background-color: #fff1f2;
     color: #e11d48;
@@ -588,7 +605,7 @@
 .product-card-img {
     width: 100%;
     height: 300px;
-    object-fit: cover; /* Keeps your custom one.jpg perfectly framed without stretching */
+    object-fit: cover; 
     background-color: #fbcfe8;
 }
 
@@ -638,4 +655,16 @@
 .add-to-cart-btn:hover {
     background-color: #ec4899;
     color: #ffffff;
+}
+
+/* Minimalist Sticky Base Footer Styling */
+footer {
+    background: #FFFFFF;
+    border-top: 1px solid #FFE4E1;
+    text-align: center;
+    padding: 15px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #7F7F7F;
+    margin-top: auto;
 }
